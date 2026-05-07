@@ -4,7 +4,13 @@ Demo content for the [organize-library](../) skill. Use these sample files to se
 
 ## What's included
 
-The `sample-files/` folder contains a mix of contracts, invoices, and purchase orders — the same content types the skill will classify, format, and organize.
+The `sample-files/` folder contains 12 documents — the same set used by the `file-classifier` demo, since organize-library orchestrates that skill:
+
+- **5 Contracts** — Supply Agreement, SLA, Consulting Services Agreement, NDA, and a commercial office Lease
+- **4 Invoices** — including a Credit Memo (negative amount)
+- **3 Purchase Orders** — raw materials, cloud services, and fleet vehicles
+
+This mix lets the skill demonstrate per-content-type views, color-coded classification pills for all three types, status pills with different colors, data bars across a wide range of values, and overdue date highlighting on past expiration/due dates.
 
 ## Setup
 

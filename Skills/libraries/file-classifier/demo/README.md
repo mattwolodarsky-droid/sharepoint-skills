@@ -4,7 +4,16 @@ Demo content for the [file-classifier](../) skill. Use these sample files to set
 
 ## What's included
 
-The `sample-files/` folder contains a mix of contracts, invoices, and purchase orders representing real document types the skill will classify.
+The `sample-files/` folder contains 12 documents covering the full range of content types the skill classifies:
+
+- **5 Contracts** — Supply Agreement, Service Level Agreement, Consulting Services Agreement, NDA, and a commercial office Lease
+- **4 Invoices** — including a Credit Memo (negative amount) to demonstrate subtype handling
+- **3 Purchase Orders** — raw materials, cloud services, and fleet vehicles
+
+The set deliberately includes edge cases the skill is designed to handle correctly:
+- A Supply Agreement that mentions invoices and payment terms (still classifies as Contracts because of the bilateral structure)
+- A Credit Memo with a negative total amount
+- An NDA with no financial value (ContractValue = 0)
 
 ## Setup
 
