@@ -1,0 +1,56 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-style-neobrutalism",
+    "source": "pnp",
+    "title": "Style: Neobrutalism",
+    "shortDescription": "Neobrutalism style tokens for the list-styling skill. Bold black borders, saturated colors, uppercase text, chunky progress bars, hard offset shadows.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/style-neobrutalism",
+    "longDescription": [
+      "Neobrutalism style tokens for the list-styling skill. Built on thick black borders, saturated colors, uppercase text, and hard offset shadows. Each row becomes a two-panel card with a metadata sidebar and a main content panel.",
+      "Overdue items flip the shadow and border to red — an unmistakable signal that doesn't require reading the date. Use when the user says 'neobrutalism,' 'brutalist,' 'bold borders,' or 'chunky style.'"
+    ],
+    "creationDateTime": "2026-05-07",
+    "updateDateTime": "2026-05-07",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SharePoint-AI-Skill"
+      },
+      {
+        "key": "SKILL-CATEGORY",
+        "value": "List Styling"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/style-neobrutalism/assets/preview.png",
+        "alt": "Neobrutalism style applied to a SharePoint list"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "zrosenfield",
+        "pictureUrl": "https://github.com/zrosenfield.png",
+        "name": "Zach Rosenfield"
+      }
+    ],
+    "references": [
+      {
+        "name": "List Styling Engine",
+        "description": "The companion skill that applies these style tokens to a SharePoint list.",
+        "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/list-styling"
+      },
+      {
+        "name": "Demo video",
+        "description": "Walkthrough of the list-styling engine and supporting style token skills.",
+        "url": "https://youtu.be/34aAsN12s80"
+      }
+    ]
+  }
+]

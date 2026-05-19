@@ -1,0 +1,52 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-site-storage-heatmap",
+    "source": "pnp",
+    "title": "Site Storage Heatmap",
+    "shortDescription": "Generates an interactive HTML site map showing storage breakdown and hot/cold activity heatmap across all document libraries, lists, and site pages on a SharePoint site.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/site-storage-heatmap",
+    "longDescription": [
+      "Generates an interactive HTML site map showing storage breakdown and hot/cold activity heatmap across all document libraries, lists, and site pages on a SharePoint site.",
+      "Includes a site-wide summary with stacked horizontal bars showing hot/warm/cool/cold activity tiers, and per-library click-through drill-downs with file count, total size, file type breakdown, and activity heatmap. Saves the file as {FirstName}-Site-Storage-Heatmap.html and navigates the user directly to it."
+    ],
+    "creationDateTime": "2026-05-04",
+    "updateDateTime": "2026-05-04",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SharePoint-AI-Skill"
+      },
+      {
+        "key": "SKILL-CATEGORY",
+        "value": "Site Management"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/site-storage-heatmap/assets/preview.png",
+        "alt": "Site Storage Heatmap skill in action"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "JoeFranc",
+        "pictureUrl": "https://github.com/JoeFranc.png",
+        "name": "Joe Komban",
+        "company": "Microsoft"
+      }
+    ],
+    "references": [
+      {
+        "name": "agentskills.io specification",
+        "description": "The specification that SharePoint AI skills follow for installation and discovery.",
+        "url": "https://agentskills.io/specification"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-list-styling",
+    "source": "pnp",
+    "title": "List Styling Engine",
+    "shortDescription": "Transforms SharePoint lists and document libraries into fully art-directed views using column, view, and row formatting. Pairs with any style token skill in this collection.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/list-styling",
+    "longDescription": [
+      "Applies a visual style theme to any SharePoint list or library using column formatting, view formatting, row templates, and tile layouts.",
+      "Pairs with a style token skill (e.g., style-neobrutalism, style-pastel, style-terminal) that defines the colors, shapes, and typography. Provides a step-by-step workflow for mapping your list's columns to a style token file and produces a complete rowFormatter JSON that replaces the default column grid with a fully designed card layout."
+    ],
+    "creationDateTime": "2026-05-07",
+    "updateDateTime": "2026-05-07",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SharePoint-AI-Skill"
+      },
+      {
+        "key": "SKILL-CATEGORY",
+        "value": "List Styling"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/list-styling/assets/preview.png",
+        "alt": "List Styling Engine skill in action"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "zrosenfield",
+        "pictureUrl": "https://github.com/zrosenfield.png",
+        "name": "Zach Rosenfield"
+      }
+    ],
+    "references": [
+      {
+        "name": "agentskills.io specification",
+        "description": "The specification that SharePoint AI skills follow for installation and discovery.",
+        "url": "https://agentskills.io/specification"
+      },
+      {
+        "name": "Demo video",
+        "description": "Walkthrough of the list-styling engine and supporting style token skills.",
+        "url": "https://youtu.be/34aAsN12s80"
+      }
+    ]
+  }
+]

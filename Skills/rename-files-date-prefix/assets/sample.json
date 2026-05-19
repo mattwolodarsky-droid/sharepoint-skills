@@ -1,0 +1,51 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-rename-files-date-prefix",
+    "source": "pnp",
+    "title": "Rename Files with Date Prefix",
+    "shortDescription": "Renames all files in a SharePoint document library (including subfolders) to prefix them with their created date in yyMMdd format. Offers a preview before committing changes.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/rename-files-date-prefix",
+    "longDescription": [
+      "Renames all files in a SharePoint document library — including files in subfolders — to prefix them with their created date in yyMMdd format (e.g., 251203-Status Report.pdf).",
+      "Always shows a preview table before making any changes, listing current names, new names, folder paths, and skipped files. Files already prefixed with a 6-digit date are automatically skipped to avoid double-prefixing."
+    ],
+    "creationDateTime": "2026-05-14",
+    "updateDateTime": "2026-05-14",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SharePoint-AI-Skill"
+      },
+      {
+        "key": "SKILL-CATEGORY",
+        "value": "Document Management"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/rename-files-date-prefix/assets/preview.png",
+        "alt": "Rename Files with Date Prefix skill in action"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "LeonArmston",
+        "pictureUrl": "https://github.com/LeonArmston.png",
+        "name": "Leon Armston"
+      }
+    ],
+    "references": [
+      {
+        "name": "agentskills.io specification",
+        "description": "The specification that SharePoint AI skills follow for installation and discovery.",
+        "url": "https://agentskills.io/specification"
+      }
+    ]
+  }
+]

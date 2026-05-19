@@ -1,0 +1,56 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-style-retro",
+    "source": "pnp",
+    "title": "Style: Retro Memphis",
+    "shortDescription": "Retro Memphis style tokens for the list-styling skill. Hot pink, electric blue, yellow, and teal with colored borders.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/style-retro",
+    "longDescription": [
+      "Retro Memphis style tokens for the list-styling skill. Hot pink, electric blue, yellow, and teal with colored borders — bold, playful, and unapologetically nostalgic.",
+      "Use when the user says 'retro,' 'memphis,' '80s,' '90s,' 'colorful,' 'playful,' or 'bright colors.'"
+    ],
+    "creationDateTime": "2026-05-07",
+    "updateDateTime": "2026-05-07",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SharePoint-AI-Skill"
+      },
+      {
+        "key": "SKILL-CATEGORY",
+        "value": "List Styling"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/style-retro/assets/preview.png",
+        "alt": "Retro Memphis style applied to a SharePoint list"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "zrosenfield",
+        "pictureUrl": "https://github.com/zrosenfield.png",
+        "name": "Zach Rosenfield"
+      }
+    ],
+    "references": [
+      {
+        "name": "List Styling Engine",
+        "description": "The companion skill that applies these style tokens to a SharePoint list.",
+        "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/list-styling"
+      },
+      {
+        "name": "Demo video",
+        "description": "Walkthrough of the list-styling engine and supporting style token skills.",
+        "url": "https://youtu.be/34aAsN12s80"
+      }
+    ]
+  }
+]

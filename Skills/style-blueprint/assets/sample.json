@@ -1,0 +1,56 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-style-blueprint",
+    "source": "pnp",
+    "title": "Style: Blueprint",
+    "shortDescription": "Blueprint engineering-drawing style tokens for the list-styling skill. Monochromatic blue palette, double-ring rubber-stamp badges, ultra-compact two-line spec-sheet card.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/style-blueprint",
+    "longDescription": [
+      "Blueprint engineering-drawing style tokens for the list-styling skill. Monochromatic blue palette with double-ring rubber-stamp badges and an ultra-compact two-line spec-sheet card layout.",
+      "Overdue is the only red element — the rest stays in the blueprint blue family. Use when the user says 'blueprint,' 'technical drawing,' 'engineering,' 'schematic,' or 'spec sheet.'"
+    ],
+    "creationDateTime": "2026-05-07",
+    "updateDateTime": "2026-05-07",
+    "products": [
+      "SharePoint",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SharePoint-AI-Skill"
+      },
+      {
+        "key": "SKILL-CATEGORY",
+        "value": "List Styling"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/style-blueprint/assets/preview.png",
+        "alt": "Blueprint style applied to a SharePoint list"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "zrosenfield",
+        "pictureUrl": "https://github.com/zrosenfield.png",
+        "name": "Zach Rosenfield"
+      }
+    ],
+    "references": [
+      {
+        "name": "List Styling Engine",
+        "description": "The companion skill that applies these style tokens to a SharePoint list.",
+        "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/list-styling"
+      },
+      {
+        "name": "Demo video",
+        "description": "Walkthrough of the list-styling engine and supporting style token skills.",
+        "url": "https://youtu.be/34aAsN12s80"
+      }
+    ]
+  }
+]
