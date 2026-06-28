@@ -188,7 +188,32 @@ Use this base pattern unless the requested design requires a different layout:
 </html>
 ```
 
-### Step 4: Escape untrusted content
+### Step 4: Use a deterministic render contract
+
+Generate HTML through a small, explicit render pipeline so the artifact is predictable and debuggable:
+
+1. **Collect inputs**: source data, user requirements, artifact title, audience, and freshness notes.
+2. **Normalize inputs**: convert all data into canonical objects with explicit defaults.
+3. **Validate inputs**: check required fields, expected schemas, row counts, and date/number parsing before rendering.
+4. **Render sections**: produce each visual section from normalized data only.
+5. **Assemble HTML**: insert rendered sections into the final document shell.
+6. **Validate output source**: run the validation checklist before handoff.
+
+Do not intermix raw source parsing, normalization, and HTML string construction in the same code path. Most broken artifacts come from rendering directly from unknown data shapes.
+
+Required render safeguards:
+
+- Every dynamic section must have an explicit empty state.
+- Every known failure mode must render a visible error panel with actionable fix text.
+- Errors must never be swallowed silently. If recovery is possible, show what was recovered; if recovery is not possible, show the error panel.
+- Do not leave unresolved template tokens such as `{{TITLE}}`, `{{CONTENT}}`, `TODO`, `undefined`, `null`, `[object Object]`, or `NaN` in visible output.
+- Do not use placeholder business data unless the user explicitly asked for a mockup or sample. For live-linked reports, placeholder business data is always forbidden.
+- Use stable section IDs and anchors so links keep working after data refreshes.
+- Keep the artifact useful with JavaScript disabled unless the user explicitly accepted a JavaScript-dependent experience.
+
+For live-linked reports, wrap the live-data initialization in a visible error boundary. The boundary may catch parsing/loading exceptions only to replace the broken section with an error panel. It must not render backup business data.
+
+### Step 5: Escape untrusted content
 
 Escape all values from emails, chats, documents, lists, spreadsheets, M365, CRM, or user-provided data before inserting into HTML:
 
@@ -202,7 +227,7 @@ Escape all values from emails, chats, documents, lists, spreadsheets, M365, CRM,
 
 Never render raw untrusted HTML.
 
-### Step 5: Validate before handoff
+### Step 6: Validate before handoff
 
 Before handing the file to the user, verify the source and layout:
 
@@ -214,8 +239,9 @@ Before handing the file to the user, verify the source and layout:
 6. Confirm all meaningful images have alt text and decorative images use `alt=""`.
 7. Confirm charts and tables are readable without hover.
 8. Confirm private data is intentional and appropriate for the SharePoint location.
-9. If possible, upload to SharePoint or OneDrive and open through preview or File Viewer.
-10. If embedded on a SharePoint page, verify the actual web part/container size.
+9. Confirm there are no unresolved placeholders, leaked JavaScript values, or accidental mock rows.
+10. If possible, upload to SharePoint or OneDrive and open through preview or File Viewer.
+11. If embedded on a SharePoint page, verify the actual web part/container size.
 
 ---
 
@@ -313,6 +339,11 @@ Search the final HTML source for these banned strings and remove any unsafe usag
 - `localhost`
 - `C:\`
 - `/Users/`
+- `{{`
+- `TODO`
+- `undefined`
+- `[object Object]`
+- `NaN`
 
 Then verify:
 
@@ -327,6 +358,8 @@ Then verify:
 - [ ] No external assets, fonts, APIs, runtime network calls, or non-approved external files exist.
 - [ ] No secrets, tokens, cookies, or hidden raw data exist.
 - [ ] All untrusted content is escaped.
+- [ ] No unresolved placeholders, leaked JavaScript sentinel values, accidental mock rows, or sample business data exist.
+- [ ] Every dynamic section has an empty state and every known live-data failure has a visible error state.
 - [ ] Layout is responsive and iframe-friendly.
 - [ ] Charts and tables are readable without hover.
 - [ ] Source/freshness notes are included when data is presented.

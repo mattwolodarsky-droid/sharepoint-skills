@@ -11,6 +11,7 @@ Creates single-file HTML artifacts that render reliably in SharePoint, OneDrive,
 - Optional live links to up to 10 SharePoint/OneDrive `.csv` or `.xlsx` files in the same folder as the HTML artifact so data-backed artifacts can update when source files change
 - Defensive live-data rendering rules that prevent blank pages and errors when linked files are empty, renamed, or missing expected columns
 - Live-only behavior for live-linked reports: no hardcoded backup rows, fallback datasets, cached snapshots, sample rows, or stale render data
+- A deterministic render contract with input normalization, explicit empty states, visible error panels, and source checks for unresolved placeholders or leaked JavaScript values
 - Guardrails against CDNs, runtime network calls, local file paths, external assets, secrets, and unsafe raw HTML
 - A validation checklist for source scanning, responsive rendering, accessibility, and privacy review
 
