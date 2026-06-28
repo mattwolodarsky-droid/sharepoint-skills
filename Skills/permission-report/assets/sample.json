@@ -1,0 +1,48 @@
+[
+  {
+    "name": "pnp-sharepoint-skills-permission-report",
+    "source": "pnp",
+    "title": "Permission Report",
+    "shortDescription": "Creates a read-only SharePoint permission and sharing access review as a self-contained HTML report, highlighting high-risk access such as Anyone links, external users, broad groups, and unique permissions.",
+    "url": "https://github.com/pnp/sharepoint-skills/tree/main/Skills/permission-report",
+    "longDescription": [
+      "Creates a read-only permission and sharing access review report for selected files/folders, a named list or library, or the whole current SharePoint site, based only on data the current user can already access.",
+      "Generates and saves a self-contained HTML report with summary totals, a color-coded access table, and flagged risks for Anyone links, external or guest users, broad tenant-wide groups, broken inheritance, and individual Full Control assignments."
+    ],
+    "creationDateTime": "2026-06-28",
+    "updateDateTime": "2026-06-28",
+    "products": ["SharePoint", "Microsoft 365 Copilot"],
+    "metadata": [
+      {
+        "key": "SAMPLE-TYPE",
+        "value": "SharePoint-AI-Skill"
+      },
+      {
+        "key": "SKILL-CATEGORY",
+        "value": "Document Management"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/sharepoint-skills/raw/main/Skills/permission-report/assets/preview.png",
+        "alt": "Permission Report skill in action"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Sandeep-FED",
+        "pictureUrl": "https://github.com/Sandeep-FED.png",
+        "name": "Sandeep P S"
+      }
+    ],
+    "references": [
+      {
+        "name": "agentskills.io specification",
+        "description": "The specification that SharePoint AI skills follow for installation and discovery.",
+        "url": "https://agentskills.io/specification"
+      }
+    ]
+  }
+]
